@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div>
+    <h1>회원가입</h1>
+    <form action="http://127.0.0.1:5000/db/insert" method="POST" >
+
+        아이디 <input type="text" name="id"><hr>
+        비밀번호 <input type="text" name="pw"><hr>
+        이름 <input type="text" name="name"><hr>
+        전화번호 <input type="text" name="phone"><hr>
+
+        <input type="submit" value="제출">
+
+    </form>
+
+</div>
+    
+{% endblock %}
